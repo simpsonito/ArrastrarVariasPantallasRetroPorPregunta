@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Actividad Arrastrar hacia la respuesta</title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+    <!-- Estilos específicos -->
+    <link href="DragAndDropPantallas/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <section class="container">
+        <div id="main" class="row">
+
+            <div class="col-md-12 wow bounceInDown">
+                <h1>Actividad Arrastrar hacia la respuesta</h1>
+            </div>
+            <div class="col-md-12 wow bounceIn">
+                <div id="dialog" title="Mensaje">
+                    <p>&nbsp;</p>
+                </div>
+                <div class="dialog-background" id="retroPopUp" style="display: none;">
+                    <div class="dialog-loading-wrapper">
+                        <div class="dialog-loading-icon">
+                            <div id="botonCerrarRetro"></div>
+                            <div id="retroPopUpMensaje">
+                                <!-- Aquí se colocarán los mensajes de retroalimentación. -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="instrucciones">
+                    Arrastra el la respuesta al espacio correcto
+                </p>
+                <div class="droppables">
+                    <div class="pagina">
+                        <div class="pregunta">
+                            1.	Los antecedentes de la mercadotecnia se remontan a la aparición del <div class="ui-widget-header droppable" data-respuesta="1"></div> y la satisfacción de sus <div class="ui-widget-header droppable" data-respuesta="1.1"></div>actividades como la <div class="ui-widget-header droppable" data-respuesta="1.2"></div>
+                        </div>
+                        <div class="retroInd">
+                            La actividad de intercambio que dio origen al comercio ha existido desde tiempos antiguos.
+                        </div>
+                        <div class="arrastrables">
+                            <div class="ui-widget-content draggable" data-respuesta="1">hombre</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">trabajo</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">mercado</div>
+                            <div class="ui-widget-content draggable" data-respuesta="1.1">necesidades</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">tribus</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">actividades</div>
+                            <div class="ui-widget-content draggable" data-respuesta="1.2">caza,pesca y recolección</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">satisfacción,trabajo y familia</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">socialización,hambre y trabajo</div>
+                        </div>
+                    </div>
+
+                    <div class="pagina">
+                        <div class="pregunta">
+                            2. Durante la <div class="ui-widget-header droppable" data-respuesta="2"></div>, la <div class="ui-widget-header droppable" data-respuesta="2.1"></div> ejercía un liderazgo y determinaba la forma de vida.
+                        </div>
+                        <div class="retroInd">
+                            Los plebeyos, que eran campesinos, artesanos y la clase trabajadora, entregaban sus productos a la nobleza y al clero.
+                        </div>
+                        <div class="arrastrables">
+                            <div class="ui-widget-content draggable" data-respuesta="2">Edad Media</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">época antigua</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">edad clásica</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">sociedad</div>
+                            <div class="ui-widget-content draggable" data-respuesta="2.1">monarquía</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">actividad comercial</div>
+                        </div>
+                    </div>
+
+                    <div class="pagina">
+                        <div class="pregunta">
+                            3.Durante el<div class="ui-widget-header droppable" data-respuesta="3"></div> surge un nuevo <div class="ui-widget-header droppable" data-respuesta="3.1"></div> , sistema por el que la economía se basaba en el comercio privado.
+                        </div>
+                        <div class="retroInd">
+                            Los negocios muchas veces estaban en manos de una sola familia, en donde cada familiar aportaba parte del dinero y trabajaba bajo la dirección del jefe de la familia.
+                        </div>
+                        <div class="arrastrables">
+                            <div class="ui-widget-content draggable" data-respuesta="3">Renacimiento</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">Romanticismo</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">Clasisismo</div>
+                            <div class="ui-widget-content draggable" data-respuesta="3.1">grupo social</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">sistema de tributaje</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">sistema de comercio</div>
+                        </div>
+                    </div>
+
+                    <div class="pagina">
+                        <div class="pregunta">
+                            4.	La <div class="ui-widget-header droppable" data-respuesta="4"></div> impulso el <div class="ui-widget-header droppable" data-respuesta="4.1"></div>
+                            durante el <div class="ui-widget-header droppable" data-respuesta="4.2"></div> , debido a que se generaron grandes <div class="ui-widget-header droppable" data-respuesta="4.3"></div> y nuevas formas de trabajo mediante la <div class="ui-widget-header droppable" data-respuesta="4.4"></div>
+                        </div>
+                        <div class="retroInd">
+                            Se caracterizó por el paso del mundo rural al urbano. Surge la propiedad privada y la acumulación de riqueza, así como nuevas formas de comercializar y promover los productos.
+                        </div>
+                        <div class="arrastrables">
+                            <div class="ui-widget-content draggable" data-respuesta="0">privatización</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">acumulación de riqueza</div>
+                            <div class="ui-widget-content draggable" data-respuesta="4">revolución industrial</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">nivel urbano</div>
+                            <div class="ui-widget-content draggable" data-respuesta="4.1">desarrollo comercial</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">mercado</div>
+                            <div class="ui-widget-content draggable" data-respuesta="4.2">Siglo XVIII</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">Siglo XVII</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">Siglo XVII</div>
+                            <div class="ui-widget-content draggable" data-respuesta="4.3">ciudades</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">industrias</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">productos</div>
+                            <div class="ui-widget-content draggable" data-respuesta="4.4">fuerza motriz</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">producto artesanal</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">investigación informal</div>
+                        </div>
+                    </div>
+
+                    <div class="pagina">
+                        <div class="pregunta">
+                            5. El <div class="ui-widget-header droppable" data-respuesta="5"></div> presentó gran inestabilidad. Algunas de las razones importantes fueron la <div class="ui-widget-header droppable" data-respuesta="5.1"></div>, como oportunidad para eficaces estrategias de comercialización, la Primera Guerra Mundial, que <div class="ui-widget-header droppable" data-respuesta="5.2"></div> los intereses de las naciones al término de la Segunda Guerra Mundial, pues se crearon <div class="ui-widget-header droppable" data-respuesta="5.3"></div> que orientaron la venta de productos a la satisfacción del consumidor.
+                        </div>
+                        <div class="retroInd">
+                            Otro importante acontecimiento fue el estancamiento en el desarrollo de prácticas de intercambio comercial.
+                        </div>
+                        <div class="arrastrables">
+                            <div class="ui-widget-content draggable" data-respuesta="5">Siglo XX</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">Siglo XXI</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">Siglo XIX</div>
+                            <div class="ui-widget-content draggable" data-respuesta="5.1">depresión de 1929</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">crisis de 1968</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">revolución rusa</div>
+                            <div class="ui-widget-content draggable" data-respuesta="5.2">dividió</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">alineo</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">enlazó</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">grupos</div>
+                            <div class="ui-widget-content draggable" data-respuesta="5.3">organizaciones</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">naciones</div>
+                        </div>
+                    </div>
+
+                    <div class="pagina">
+                        <div class="pregunta">
+                            6. El concepto de mercadotecnia como disciplina del conocimiento tiene su origen en <div class="ui-widget-header droppable" data-respuesta="6"></div> , después de la <div class="ui-widget-header droppable" data-respuesta="6.1"></div> , dando un giro hacia el estudio de <div class="ui-widget-header droppable" data-respuesta="6.2"></div> de los mercados, con el fin de detectar <div class="ui-widget-header droppable" data-respuesta="6.3"></div> y de esa manera ofrecerles bienes o servicios.
+                        </div>
+                        <div class="retroInd">
+                            Época en la que las empresas se enfocaban en la manufactura de productos para ofrecerlos a los mercados mediante la fuerza de ventas, apoyándose en agresivas campañas de publicidad.
+                        </div>
+                        <div class="arrastrables">
+                            <div class="ui-widget-content draggable" data-respuesta="6">Estados Unidos</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">Rusia</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">Inglaterra</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">revolución industrial</div>
+                            <div class="ui-widget-content draggable" data-respuesta="6.1">segunda guerra mundial</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">revolución rusa</div>
+                            <div class="ui-widget-content draggable" data-respuesta="6.2">intereses</div>
+                            <div class="ui-widget-content draggable" data-respuesta="6.3">necesidades</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">productos</div>
+                            <div class="ui-widget-content draggable" data-respuesta="6.3">necesidades</div>
+                            <div class="ui-widget-content draggable" data-respuesta="6.2">intereses</div>
+                            <div class="ui-widget-content draggable" data-respuesta="0">productos</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="retroFinal"></div>
+                <div class="barraInferior">
+                    <button id="btnRevisar">Revisar</button><button class="btn btn-primary" id="btnSiguiente">Siguiente</button><button id="btnReiniciar">Reiniciar</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="DragAndDropPantallas/js/main.js"></script>
+</body>
+</html>

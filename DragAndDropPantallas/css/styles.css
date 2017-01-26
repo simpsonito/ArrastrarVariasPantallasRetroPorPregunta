@@ -1,0 +1,65 @@
+@charset "UTF-8";
+.arrastrables{
+}
+.droppables{
+    clear: both;
+}
+.droppables > .pagina{
+    display: none;
+}
+.droppables > .pagina:first-child{
+    display: block;
+}
+.draggable {
+    min-width: 90px;
+    min-height: 40px;
+    padding: 0.5em;
+    float: left;
+    margin: 10px;
+    text-align: center;
+}
+.draggable:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+.droppable{
+    border-style: dashed;
+}
+.droppable {
+    width: 120px;
+    min-height: 40px;/*Basicamente aquí se da la altura del recuadro y de la línea*/
+    padding: 0.5em;
+    /*float: left;*/
+    margin: 2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+div.ui-droppable-hover{/* estilo de un droppable cuando un draggable pasa sobre él */
+    background: white;
+    border: 1px solid #4a75ab
+}
+.barraInferior{
+    text-align: center;
+    clear: both;
+}
+.bien{
+    background: #eeffee url("palomita.png") no-repeat top right; 
+}
+.mal{
+    background: #ffeeee url("tache.png") no-repeat top right;
+}
+.retroInd{
+    display: none;
+}
+.barraInferior #btnSiguiente{
+    display: none;
+}
+.barraInferior.contestada #btnSiguiente{
+    display: inline-block;
+}
+.barraInferior.contestada #btnRevisar{
+    display: none;
+}
+#retroFinal:empty{
+    display: none;
+}
